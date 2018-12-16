@@ -1,0 +1,89 @@
+<style>
+.mp-dancing-heater {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 0;
+  height: 60px;
+  font-size: 0;
+}
+.mp-dancing-heater .mp-dancing-heater-hbar {
+  position: absolute;
+  width: 108px;
+  height: 6px;
+  background-color: #6666ff;
+}
+.mp-dancing-heater .mp-dancing-heater-hbar-up {
+  top: 20px;
+}
+.mp-dancing-heater .mp-dancing-heater-hbar-down {
+  top: 34px;
+}
+.mp-dancing-heater .mp-dancing-heater-bar {
+  display: inline-block;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 4px;
+  padding: 0;
+  height: 30px;
+  width: 10px;
+  border-radius: 3px;
+  background-color: #6666ff;
+  animation: mp-dancing-heater 1.6s ease-in-out infinite;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(5) {
+  animation-delay: 1.0s;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.mp-dancing-heater .mp-dancing-heater-bar-container .mp-dancing-heater-bar:nth-child(8) {
+  animation-delay: 1.6s;
+}
+@keyframes mp-dancing-heater {
+  0% {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 60px;
+  }
+  100% {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 30px;
+  }
+}
+</style>
+<div class="mp-dancing-heater">
+  <div class="mp-dancing-heater-hbar mp-dancing-heater-hbar-up"></div>
+  <div class="mp-dancing-heater-hbar mp-dancing-heater-hbar-down"></div>
+  <div class="mp-dancing-heater-bar-container">
+    <div class="mp-dancing-heater-bar"></div>
+    <div class="mp-dancing-heater-bar"></div>
+    <div class="mp-dancing-heater-bar"></div>
+    <div class="mp-dancing-heater-bar"></div>
+    <div class="mp-dancing-heater-bar"></div>
+    <div class="mp-dancing-heater-bar"></div>
+    <div class="mp-dancing-heater-bar"></div>
+    <div class="mp-dancing-heater-bar"></div>
+  </div>
+</div>
