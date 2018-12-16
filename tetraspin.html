@@ -1,0 +1,89 @@
+<style>
+.mp-tetraspin {
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.mp-tetraspin .mp-tetraspin-spinner {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+.mp-tetraspin .mp-tetraspin-spinner-outer {
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #DA2020 #DA2020 transparent transparent;
+  animation: mp-tetraspin-clockwise 4s linear infinite;
+}
+.mp-tetraspin .mp-tetraspin-spinner-ocenter {
+  box-sizing: border-box;
+  width: 58px;
+  height: 58px;
+  margin: 16px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent #19AE19 #19AE19 transparent;
+  animation: mp-tetraspin-counter-clockwise 4s linear infinite;
+}
+.mp-tetraspin .mp-tetraspin-spinner-icenter {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #DABA20 #DABA20;
+  animation: mp-tetraspin-clockwise 4s linear infinite;
+}
+.mp-tetraspin .mp-tetraspin-spinner-inner {
+  box-sizing: border-box;
+  width: 39px;
+  height: 39px;
+  margin: 25.5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #3F2496 transparent transparent #3F2496;
+  animation: mp-tetraspin-counter-clockwise 4s linear infinite;
+}
+.mp-tetraspin .mp-tetraspin-spinner-container .mp-tetraspin-spinner:nth-child(1) {
+  animation-delay: -0.8s;
+}
+.mp-tetraspin .mp-tetraspin-spinner-container .mp-tetraspin-spinner:nth-child(2) {
+  animation-delay: -0.6s;
+}
+.mp-tetraspin .mp-tetraspin-spinner-container .mp-tetraspin-spinner:nth-child(3) {
+  animation-delay: -0.4s;
+}
+.mp-tetraspin .mp-tetraspin-spinner-container .mp-tetraspin-spinner:nth-child(4) {
+  animation-delay: -0.2s;
+}
+@keyframes mp-tetraspin-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mp-tetraspin-counter-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+</style>
+<div class="mp-tetraspin">
+  <div class="mp-tetraspin-spinner-container">
+    <div class="mp-tetraspin-spinner mp-tetraspin-spinner-outer"></div>
+    <div class="mp-tetraspin-spinner mp-tetraspin-spinner-ocenter"></div>
+    <div class="mp-tetraspin-spinner mp-tetraspin-spinner-icenter"></div>
+	<div class="mp-tetraspin-spinner mp-tetraspin-spinner-inner"></div>
+  </div>
+</div>

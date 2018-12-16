@@ -1,0 +1,75 @@
+<style>
+.mp-wave {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 0;
+  height: 60px;
+  font-size: 0;
+}
+.mp-wave .mp-wave-bar {
+  display: inline-block;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 4px;
+  padding: 0;
+  height: 30px;
+  width: 10px;
+  border-radius: 3px;
+  background-color: #6666ff;
+  animation: mp-wave 1.6s ease-in-out infinite;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(5) {
+  animation-delay: 1.0s;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.mp-wave .mp-wave-bar-container .mp-wave-bar:nth-child(8) {
+  animation-delay: 1.6s;
+}
+@keyframes mp-wave {
+  0% {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 60px;
+  }
+  100% {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 30px;
+  }
+}
+</style>
+<div class="mp-wave">
+  <div class="mp-wave-bar-container">
+    <div class="mp-wave-bar"></div>
+    <div class="mp-wave-bar"></div>
+    <div class="mp-wave-bar"></div>
+    <div class="mp-wave-bar"></div>
+    <div class="mp-wave-bar"></div>
+    <div class="mp-wave-bar"></div>
+    <div class="mp-wave-bar"></div>
+    <div class="mp-wave-bar"></div>
+  </div>
+</div>
