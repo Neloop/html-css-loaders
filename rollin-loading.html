@@ -1,0 +1,71 @@
+<style>
+.mp-rollin-loader {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 0;
+  height: 30px;
+  font-size: 0;
+  perspective: 500px;
+  perspective-origin: left;
+}
+.mp-rollin-loader .mp-rollin-letter {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  margin-right: 4px;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  border: 2px solid gray;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transform-origin: top center;
+  transform: rotateX(90deg);
+  animation: mp-rollin-loader 4s ease-in-out infinite;
+}
+.mp-rollin-loader .mp-rollin-letter:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.mp-rollin-loader .mp-rollin-letter:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.mp-rollin-loader .mp-rollin-letter:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.mp-rollin-loader .mp-rollin-letter:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.mp-rollin-loader .mp-rollin-letter:nth-child(5) {
+  animation-delay: 1.0s;
+}
+.mp-rollin-loader .mp-rollin-letter:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.mp-rollin-loader .mp-rollin-letter:nth-child(7) {
+  animation-delay: 1.4s;
+}
+@keyframes mp-rollin-loader {
+  0%, 10% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  } 25%, 75% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+}
+</style>
+<div class="mp-rollin-loader">
+  <div class="mp-rollin-letter">L</div>
+  <div class="mp-rollin-letter">O</div>
+  <div class="mp-rollin-letter">A</div>
+  <div class="mp-rollin-letter">D</div>
+  <div class="mp-rollin-letter">I</div>
+  <div class="mp-rollin-letter">N</div>
+  <div class="mp-rollin-letter">G</div>
+</div>

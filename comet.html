@@ -1,0 +1,134 @@
+<style>
+.mp-comet-loader {
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.mp-comet-loader .mp-comet-background {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: black;
+}
+.mp-comet-loader .mp-comet-spinner {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+  animation: mp-comet-loader 3s ease-in-out infinite;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(1) {
+  animation-delay: -0.4s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(2) {
+  animation-delay: -0.375s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(3) {
+  animation-delay: -0.35s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(4) {
+  animation-delay: -0.325s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(5) {
+  animation-delay: -0.3s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(6) {
+  animation-delay: -0.25s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(7) {
+  animation-delay: -0.2s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(8) {
+  animation-delay: -0.15s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(9) {
+  animation-delay: -0.1s;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(10) {
+  animation-delay: -0.05s;
+}
+.mp-comet-loader .mp-comet-spinner .mp-comet-dot {
+  display: block;
+  position: absolute;
+  left: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(2) .mp-comet-dot {
+  left: 31px;
+  width: 9px;
+  height: 9px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(3) .mp-comet-dot {
+  left: 31px;
+  width: 8px;
+  height: 8px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(4) .mp-comet-dot {
+  left: 32px;
+  width: 7px;
+  height: 7px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(5) .mp-comet-dot {
+  left: 32px;
+  width: 6px;
+  height: 6px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(6) .mp-comet-dot {
+  left: 33px;
+  width: 5px;
+  height: 5px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(7) .mp-comet-dot {
+  left: 33px;
+  width: 4px;
+  height: 4px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(8) .mp-comet-dot {
+  left: 34px;
+  width: 3px;
+  height: 3px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(9) .mp-comet-dot {
+  left: 34px;
+  width: 2px;
+  height: 2px;
+}
+.mp-comet-loader .mp-comet-spinner-container .mp-comet-spinner:nth-child(10) .mp-comet-dot {
+  left: 35px;
+  width: 1px;
+  height: 1px;
+}
+@keyframes mp-comet-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+<div class="mp-comet-loader">
+  <div class="mp-comet-background"></div>
+  <div class="mp-comet-spinner-container">
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+    <div class="mp-comet-spinner"><div class="mp-comet-dot"></div></div>
+  </div>
+</div>
