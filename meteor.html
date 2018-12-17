@@ -1,0 +1,171 @@
+<style>
+.mp-meteor {
+  display: block;
+  position: relative;
+  padding: 0;
+  height: 70px;
+  width: 120px;
+  background-color: black;
+}
+.mp-meteor-container {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  padding: 0;
+  height: 50px;
+  width: 100px;
+}
+.mp-meteor .mp-meteor-leader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.mp-meteor .mp-meteor-rock {
+  display: block;
+  position: absolute;
+  right: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: silver;
+}
+.mp-meteor .mp-meteor-rock.mp-meteor-rock-up {
+  top: 0;
+  z-index: 20;
+  animation: mp-meteor-rock-up 3s ease-in-out infinite;
+}
+.mp-meteor .mp-meteor-rock.mp-meteor-rock-down {
+  top: 40;
+  z-index: 0;
+  animation: mp-meteor-rock-down 3s ease-in-out infinite;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(2) {
+  width: 9px;
+  height: 9px;
+  right: 39px;
+  opacity: 0.95;
+  animation-delay: 0.1s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(3) {
+  width: 8px;
+  height: 8px;
+  right: 47px;
+  opacity: 0.9;
+  animation-delay: 0.2s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(4) {
+  width: 7px;
+  height: 7px;
+  right: 55px;
+  opacity: 0.85;
+  animation-delay: 0.3s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(5) {
+  width: 6px;
+  height: 6px;
+  right: 62px;
+  opacity: 0.8;
+  animation-delay: 0.4s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(6) {
+  width: 5px;
+  height: 5px;
+  right: 68px;
+  opacity: 0.75;
+  animation-delay: 0.5s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(7) {
+  width: 4px;
+  height: 4px;
+  right: 73px;
+  opacity: 0.7;
+  animation-delay: 0.6s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(8) {
+  width: 3px;
+  height: 3px;
+  right: 77px;
+  opacity: 0.65;
+  animation-delay: 0.7s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(9) {
+  width: 2px;
+  height: 2px;
+  right: 80px;
+  opacity: 0.6;
+  animation-delay: 0.8s;
+}
+.mp-meteor .mp-meteor-rock-container .mp-meteor-rock:nth-child(10) {
+  width: 1px;
+  height: 1px;
+  right: 82px;
+  opacity: 0.55;
+  animation-delay: 0.9s;
+}
+@keyframes mp-meteor-rock-up {
+  50% {
+    top: 40px;
+    z-index: 20;
+  }
+  51% {
+    z-index: 0;
+  }
+  100% {
+    top: 0;
+    z-index: 0;
+  }
+}
+@keyframes mp-meteor-rock-down {
+  50% {
+    top: 0;
+    z-index: 0;
+  }
+  51% {
+    z-index: 20;
+  }
+  100% {
+    top: 40px;
+    z-index: 20;
+  }
+}
+</style>
+<div class="mp-meteor">
+  <div class="mp-meteor-container">
+    <svg class="mp-meteor-leader" width="100" height="50">
+	  <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(128,128,128);stop-opacity:0" />
+          <stop offset="70%" style="stop-color:rgb(128,128,128);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(128,128,128);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <path d="M 20 25 L90 15 L90 35 Z" fill="url(#grad1)" />
+      <circle r="10" cx="90" cy="25" fill="gray" />
+    </svg>
+    <div class="mp-meteor-rock-container">
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-up"></div>
+    </div>
+	<div class="mp-meteor-rock-container">
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+      <div class="mp-meteor-rock mp-meteor-rock-down"></div>
+    </div>
+  </div>
+</div>
