@@ -1,0 +1,176 @@
+<style>
+.mp-recodex {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 0;
+  width: 260px;
+  height: 260px;
+  font-size: 0;
+}
+.mp-recodex-spinner-container {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+}
+.mp-recodex-spinner {
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 50%;
+}
+.mp-recodex-spinner-outer {
+  width: 260px;
+  height: 260px;
+  border-color: #b8c7ce #b8c7ce transparent transparent;
+  transform: rotate(315deg);
+  animation: mp-recodex-spinner-clockwise 4s linear infinite;
+}
+.mp-recodex-spinner-center {
+  width: 245px;
+  height: 245px;
+  margin: 7.5px;
+  border-color: transparent transparent #b8c7ce #b8c7ce;
+  transform: rotate(315deg);
+  animation: mp-recodex-spinner-counterclockwise 4s linear infinite;
+}
+.mp-recodex-spinner-inner {
+  width: 230px;
+  height: 230px;
+  margin: 15px;
+  border-color: transparent #b8c7ce #b8c7ce transparent;
+  transform: rotate(315deg);
+  animation: mp-recodex-spinner-clockwise 4s linear infinite;
+}
+.mp-recodex-logo-container {
+  display: inline-block;
+  position: relative;
+  margin: 55px;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+}
+.mp-recodex-signature {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36px;
+  width: 112px;
+  background-color: #8ac75a;
+  animation: mp-recodex-signature 8s ease infinite;
+}
+.mp-recodex-brace {
+  position: absolute;
+  height: 36px;
+  width: 36px;
+}
+.mp-recodex-brace-top {
+  position: absolute;
+  border-top: 36px solid #8ac75a;
+  border-right: 36px solid transparent;
+  animation: mp-recodex-brace 8s ease-in infinite;
+}
+.mp-recodex-brace-bottom {
+  position: absolute;
+  border-bottom: 36px solid #8ac75a;
+  border-right: 36px solid transparent;
+  animation: mp-recodex-brace 8s ease-in infinite;
+}
+.mp-recodex-start-brace {
+  top: 0;
+  left: 114px;
+}
+.mp-recodex-end-brace {
+  top: 114px;
+  left: 0;
+  transform: rotate(180deg);
+}
+.mp-recodex-body-left {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  height: 74px;
+  width: 36px;
+  background-color: #8ac75a;
+  animation: mp-recodex-body-left 8s ease-out infinite;
+}
+.mp-recodex-body-right {
+  position: absolute;
+  top: 38px;
+  left: 76px;
+  height: 74px;
+  width: 36px;
+  background-color: #8ac75a;
+  animation: mp-recodex-body-right 8s ease-in-out infinite;
+}
+@keyframes mp-recodex-signature {
+  0% {
+    width: 0;
+  }
+  12.5%, 100% {
+    width: 112px;
+  }
+}
+@keyframes mp-recodex-brace {
+  0%, 12.5% {
+    border-right: 0 solid transparent;
+  }
+  25%, 100% {
+    border-right: 36px solid transparent;
+  }
+}
+@keyframes mp-recodex-body-left {
+  0%, 25% {
+    height: 0;
+  }
+  37.5%, 100% {
+    height: 74px;
+  }
+}
+@keyframes mp-recodex-body-right {
+  0%, 37.5% {
+    height: 0;
+  }
+  50%, 100% {
+    height: 74px;
+  }
+}
+@keyframes mp-recodex-spinner-clockwise {
+  0% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(675deg);
+  }
+}
+@keyframes mp-recodex-spinner-counterclockwise {
+  0% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+</style>
+<div class="mp-recodex">
+  <div class="mp-recodex-spinner-container">
+    <div class="mp-recodex-spinner mp-recodex-spinner-outer"></div>
+    <div class="mp-recodex-spinner mp-recodex-spinner-center"></div>
+    <div class="mp-recodex-spinner mp-recodex-spinner-inner"></div>
+  </div>
+  <div class="mp-recodex-logo-container">
+    <div class="mp-recodex-signature"></div>
+    <div class="mp-recodex-brace mp-recodex-start-brace">
+      <div class="mp-recodex-brace-top"></div>
+      <div class="mp-recodex-brace-bottom"></div>
+    </div>
+    <div class="mp-recodex-body-left"></div>
+    <div class="mp-recodex-body-right"></div>
+    <div class="mp-recodex-brace mp-recodex-end-brace">
+      <div class="mp-recodex-brace-top"></div>
+      <div class="mp-recodex-brace-bottom"></div>
+    </div>
+  </div>
+</div>

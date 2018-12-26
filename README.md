@@ -8,3 +8,4 @@ Fun page loaders (spinners, loading) project for learning CSS3 and animations...
 - [Wave](https://neloop.github.io/html-css-loaders/wave.html "Wave")
 - [Tetraspin](https://neloop.github.io/html-css-loaders/tetraspin.html "Tetraspin")
 - [Meteor](https://neloop.github.io/html-css-loaders/meteor.html "Meteor")
+- [ReCodEx](https://neloop.github.io/html-css-loaders/recodex.html "ReCodEx")
