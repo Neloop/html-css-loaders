@@ -59,33 +59,23 @@
   height: 36px;
   width: 112px;
   background-color: #8ac75a;
-  animation: mp-recodex-signature 8s ease infinite;
+  animation: mp-recodex-signature 8s linear infinite;
 }
 .mp-recodex-brace {
   position: absolute;
   height: 36px;
   width: 36px;
 }
-.mp-recodex-brace-top {
-  position: absolute;
-  border-top: 36px solid #8ac75a;
-  border-right: 36px solid transparent;
-  animation: mp-recodex-brace 8s ease-in infinite;
-}
-.mp-recodex-brace-bottom {
-  position: absolute;
-  border-bottom: 36px solid #8ac75a;
-  border-right: 36px solid transparent;
-  animation: mp-recodex-brace 8s ease-in infinite;
-}
 .mp-recodex-start-brace {
   top: 0;
   left: 114px;
+  animation: mp-recodex-start-brace 8s linear infinite;
 }
 .mp-recodex-end-brace {
   top: 114px;
   left: 0;
   transform: rotate(180deg);
+  animation: mp-recodex-end-brace 8s linear infinite;
 }
 .mp-recodex-body-left {
   position: absolute;
@@ -94,7 +84,7 @@
   height: 74px;
   width: 36px;
   background-color: #8ac75a;
-  animation: mp-recodex-body-left 8s ease-out infinite;
+  animation: mp-recodex-body-left 8s linear infinite;
 }
 .mp-recodex-body-right {
   position: absolute;
@@ -103,38 +93,56 @@
   height: 74px;
   width: 36px;
   background-color: #8ac75a;
-  animation: mp-recodex-body-right 8s ease-in-out infinite;
+  animation: mp-recodex-body-right 8s linear infinite;
 }
 @keyframes mp-recodex-signature {
   0% {
-    width: 0;
+	opacity: 0;
+	filter: blur(5px);
   }
   12.5%, 100% {
-    width: 112px;
+	opacity: 1;
+	filter: blur(0);
   }
 }
-@keyframes mp-recodex-brace {
+@keyframes mp-recodex-start-brace {
   0%, 12.5% {
-    border-right: 0 solid transparent;
+	opacity: 0;
+	filter: blur(5px);
   }
   25%, 100% {
-    border-right: 36px solid transparent;
+	opacity: 1;
+	filter: blur(0);
   }
 }
 @keyframes mp-recodex-body-left {
   0%, 25% {
-    height: 0;
+	opacity: 0;
+	filter: blur(5px);
   }
   37.5%, 100% {
-    height: 74px;
+	opacity: 1;
+	filter: blur(0);
   }
 }
 @keyframes mp-recodex-body-right {
   0%, 37.5% {
-    height: 0;
+	opacity: 0;
+	filter: blur(5px);
   }
   50%, 100% {
-    height: 74px;
+	opacity: 1;
+	filter: blur(0);
+  }
+}
+@keyframes mp-recodex-end-brace {
+  0%, 50% {
+	opacity: 0;
+	filter: blur(5px);
+  }
+  62.5%, 100% {
+	opacity: 1;
+	filter: blur(0);
   }
 }
 @keyframes mp-recodex-spinner-clockwise {
@@ -162,15 +170,13 @@
   </div>
   <div class="mp-recodex-logo-container">
     <div class="mp-recodex-signature"></div>
-    <div class="mp-recodex-brace mp-recodex-start-brace">
-      <div class="mp-recodex-brace-top"></div>
-      <div class="mp-recodex-brace-bottom"></div>
-    </div>
+	<svg class="mp-recodex-brace mp-recodex-start-brace" width="36px" height="36px">
+	  <path style="fill:#8ac75a;" d="M 0 0 L 0 36 L 36 36 L 18 18 L 36 0 L 0 0 z"/></path>
+	</svg>
     <div class="mp-recodex-body-left"></div>
     <div class="mp-recodex-body-right"></div>
-    <div class="mp-recodex-brace mp-recodex-end-brace">
-      <div class="mp-recodex-brace-top"></div>
-      <div class="mp-recodex-brace-bottom"></div>
-    </div>
+    <svg class="mp-recodex-brace mp-recodex-end-brace" width="36px" height="36px">
+	  <path style="fill:#8ac75a;" d="M 0 0 L 0 36 L 36 36 L 18 18 L 36 0 L 0 0 z"/></path>
+	</svg>
   </div>
 </div>
