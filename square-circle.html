@@ -1,0 +1,98 @@
+<style>
+.mp-square {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  font-size: 0;
+}
+.mp-square .mp-square-circle {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.mp-square .mp-square-circle:nth-child(1) {
+  top: 0;
+  left: 0;
+  animation: mp-square-1 2s ease-in-out infinite, mp-square-color 6s linear infinite;
+}
+.mp-square .mp-square-circle:nth-child(2) {
+  left: 40px;
+  top: 0;
+  animation: mp-square-2 2s ease-in-out infinite, mp-square-color 6s linear infinite;
+}
+.mp-square .mp-square-circle:nth-child(3) {
+  top: 40px;
+  left: 40px;
+  animation: mp-square-3 2s ease-in-out infinite, mp-square-color 6s linear infinite;
+}
+.mp-square .mp-square-circle:nth-child(4) {
+  top: 40px;
+  left: 0;
+  animation: mp-square-4 2s ease-in-out infinite, mp-square-color 6s linear infinite;
+}
+@keyframes mp-square-color {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: blue;
+  }
+  80% {
+    background-color: purple;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes mp-square-1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 40px;
+  }
+}
+@keyframes mp-square-2 {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@keyframes mp-square-3 {
+  0% {
+    left: 40px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes mp-square-4 {
+  0% {
+    top: 40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+</style>
+<div class="mp-square">
+  <div class="mp-square-circle"></div>
+  <div class="mp-square-circle"></div>
+  <div class="mp-square-circle"></div>
+  <div class="mp-square-circle"></div>
+</div>
