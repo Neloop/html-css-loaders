@@ -12,3 +12,4 @@ Fun page loaders (spinners, loading) project for learning CSS3 and animations...
 - [ReCodEx](https://neloop.github.io/html-css-loaders/recodex.html "ReCodEx")
 - [Circled Square](https://neloop.github.io/html-css-loaders/circled-square.html "Circled Square")
 - [Squares](https://neloop.github.io/html-css-loaders/squares.html "Squares")
+- [Moving Dots](https://neloop.github.io/html-css-loaders/moving-dots.html "Moving Dots")
